@@ -1,6 +1,6 @@
-var config = {'googleGeoCodeServerKey':'AIzaSyBLQFBdB97o80G5KyOhnfn-D39clxtMQKg',
-            'parseAppKey':'MsuT7y640Sg6YbztFMH5X7mo6AuTsMhAR0PzrUo9',
-            'parseJsKey':'PyA1KWzt8bTA0k0q3hezPnyOD7pUAjXbJmYnbBUk',
+var config = {'googleGeoCodeServerKey':'your googleGeoCodeServerKey',
+            'parseAppKey':'your parseAppKey',
+            'parseJsKey':'your parseJsKey',
 };
 
 module.exports = {

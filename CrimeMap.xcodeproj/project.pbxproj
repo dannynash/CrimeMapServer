@@ -1,0 +1,80 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		BDC660D51BAB1E910066B628 /* backend */ = {isa = PBXFileReference; lastKnownFileType = folder; path = backend; sourceTree = "<group>"; };
+		BDC660D61BAB1E910066B628 /* data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = data; sourceTree = "<group>"; };
+		BDC660D71BAB1E910066B628 /* js */ = {isa = PBXFileReference; lastKnownFileType = folder; path = js; sourceTree = "<group>"; };
+		BDC660D81BAB1EAC0066B628 /* my.conf.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = my.conf.js; sourceTree = "<group>"; };
+		BDC660D91BAB1EAC0066B628 /* package.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = package.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		BDBF43D91B75CAFA00AF2FAF = {
+			isa = PBXGroup;
+			children = (
+				BDC660D81BAB1EAC0066B628 /* my.conf.js */,
+				BDC660D91BAB1EAC0066B628 /* package.json */,
+				BDC660D51BAB1E910066B628 /* backend */,
+				BDC660D61BAB1E910066B628 /* data */,
+				BDC660D71BAB1E910066B628 /* js */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		BDBF43DA1B75CAFA00AF2FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+			};
+			buildConfigurationList = BDBF43DD1B75CAFA00AF2FAF /* Build configuration list for PBXProject "CrimeMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BDBF43D91B75CAFA00AF2FAF;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		BDBF43DE1B75CAFA00AF2FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		BDBF43DF1B75CAFA00AF2FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDBF43DD1B75CAFA00AF2FAF /* Build configuration list for PBXProject "CrimeMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDBF43DE1B75CAFA00AF2FAF /* Debug */,
+				BDBF43DF1B75CAFA00AF2FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BDBF43DA1B75CAFA00AF2FAF /* Project object */;
+}
