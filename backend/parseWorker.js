@@ -37,10 +37,12 @@ function updateHotSpotToServer(spot){
     
     hotSpot.set("address", address);
     hotSpot.set("GeoPoint", point);
-    
+    hotSpot.set("src", spot.src);
+    hotSpot.set("url", spot.url);
+
     hotSpot.save(null, {
     success: function(hotSpot) {
-        
+                 
     }
     });
 

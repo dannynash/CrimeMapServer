@@ -42,9 +42,20 @@ function parseAddressFromData(data){
         addresses.push(all);
     }
     
-    return addresses;
+    return addMetaData(addresses);
 }
 
+function addMetaData(addresses){
+    var finalData = {};
+    
+    finalData['info'] = {};
+    finalData['info']['src'] = '臺北市政府警察局104年4-6月易發生婦幼犯罪被害地點';
+    finalData['info']['url'] = 'http://data.taipei/opendata/datalist/datasetMeta?oid=985743f7-a33e-4ac1-ad2e-7ef5ffea02e2';
+    
+    finalData['addresses'] = addresses;
+    
+    return finalData;
+}
 
 module.exports = {
     asyncCollectTaipeiCrimeMap: asyncCollectTaipeiCrimeMap,

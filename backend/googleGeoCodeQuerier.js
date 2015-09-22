@@ -10,6 +10,7 @@ var failQuery = [];
 var queryNumForEachInterval = 10;
 var timeInterval = 1100;
 var queryIndex;
+var metaData;
 var addresses;
 
 var callback;
@@ -18,13 +19,22 @@ var callback;
    10 query per second, per user
  */
 
-function asyncGetGeoCodes(addresses_, cb){
+function asyncGetGeoCodes(data, cb){
     console.log('--- start google geo code ---');
     console.log('google geo code...');
 
     clear();
+    
+    if (data){
+        metaData = data.info;
+        addresses = data.addresses;
+        
+    } else {
+        console.log('data format error');
+        return
+    }
+    
     callback = cb;
-    addresses = addresses_;
     queryEachInteval();
 }
 
@@ -81,7 +91,11 @@ function onQueryResponse(b, address){
     var data = JSON.parse(b);
     if (data.results[0]){
         var geoCode = data.results[0].geometry.location;
-        queryResult.push({'addr':address, 'geoCode':geoCode});
+        
+        queryResult.push({'addr':address,
+                         'geoCode':geoCode,
+                         'src':metaData.src,
+                         'url':metaData.url});
         
     } else {
         failQuery.push(address);
